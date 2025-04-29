@@ -1,0 +1,18 @@
+{
+  "app": "make clean && make install && python3 cdk/app.py",
+  "context": {
+    "main_resources_name": "aws-captain-sustainability",
+    "tags": {
+      "Owner": "Santiago Garcia Arango",
+      "Source": "https://github.com/san99tiago/aws-captain-sustainability",
+      "Usage": "DEMO for sustainability calculator solution on AWS"
+    },
+    "app_config": {
+      "prod": {
+        "deployment_environment": "prod",
+        "log_level": "DEBUG",
+        "api_gw_name": "captain-planet-prod"
+      }
+    }
+  }
+}
